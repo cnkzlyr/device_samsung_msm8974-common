@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2017-2018, The LineageOS Project
+** Copyright 2016, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -20,9 +20,13 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
-    <!-- Disable rounded corners on windows to improve graphics performance -->
-    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
-    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
-    <bool name="config_defaultRingtonePickerEnabled">true</bool>
+
+    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+         does not work well, particularly with noisy touchscreens. Note that disabling it may
+         increase the rate of unintentional unlocks. -->
+    <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool>
+
+    <!-- do not use H265 encoder for screen recordings -->
+    <bool name="config_useNewScreenRecEncoder">false</bool>
 
 </resources>

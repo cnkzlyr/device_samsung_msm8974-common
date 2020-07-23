@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 # Boot animation
-TARGET_BOOTANIMATION_HALF_RES := true
+#TARGET_BOOTANIMATION_HALF_RES := true
 
 # Display
 PRODUCT_PACKAGES += \
@@ -170,6 +170,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung8974 \
     android.hardware.sensors@1.0-service.samsung8974
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    ims-ext-common \
+    ims_ext_common.xml
 
 # Touch features
 PRODUCT_PACKAGES += \
